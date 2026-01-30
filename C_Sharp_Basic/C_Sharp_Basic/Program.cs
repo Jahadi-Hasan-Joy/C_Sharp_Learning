@@ -11,7 +11,7 @@ namespace C_Sharp_Basic
         static void Main(string[] args)
         {
             Console.WriteLine("Assalamu alaikum");
-            Console.ReadLine();
+            Console.ReadLine(); 
         }
     }
 }
