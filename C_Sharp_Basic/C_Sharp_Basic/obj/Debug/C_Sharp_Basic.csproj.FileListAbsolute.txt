@@ -1,0 +1,8 @@
+H:\C#\C_Sharp_Learning\C_Sharp_Basic\C_Sharp_Basic\bin\Debug\C_Sharp_Basic.exe.config
+H:\C#\C_Sharp_Learning\C_Sharp_Basic\C_Sharp_Basic\bin\Debug\C_Sharp_Basic.exe
+H:\C#\C_Sharp_Learning\C_Sharp_Basic\C_Sharp_Basic\bin\Debug\C_Sharp_Basic.pdb
+H:\C#\C_Sharp_Learning\C_Sharp_Basic\C_Sharp_Basic\obj\Debug\C_Sharp_Basic.csproj.AssemblyReference.cache
+H:\C#\C_Sharp_Learning\C_Sharp_Basic\C_Sharp_Basic\obj\Debug\C_Sharp_Basic.csproj.CoreCompileInputs.cache
+H:\C#\C_Sharp_Learning\C_Sharp_Basic\C_Sharp_Basic\obj\Debug\C_Sharp_Basic.exe
+H:\C#\C_Sharp_Learning\C_Sharp_Basic\C_Sharp_Basic\obj\Debug\C_Sharp_Basic.pdb
+H:\C#\C_Sharp_Learning\C_Sharp_Basic\C_Sharp_Basic\obj\Debug\C_Sharp_Basic.exe.config
