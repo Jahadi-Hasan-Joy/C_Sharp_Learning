@@ -74,19 +74,18 @@ namespace C_Sharp_Basic
 
             Console.WriteLine("Ludu dice value is " + randomGenerator.Next(1, 7));
             Console.WriteLine("double Ludu dice value is " +
-                (randomGenerator.Next(1, 7) + randomGenerator.Next(1, 7))
-            );
+                (randomGenerator.Next(1, 7) + randomGenerator.Next(1, 7)));
             Console.WriteLine("Double random num is " + randomGenerator.NextDouble());
             Console.WriteLine();
 
 
-            // STRING OPERATIONS
+            // STRING OPERATIONS 
             string userFullName = "Jahadi Hasan Joy";
 
             Console.WriteLine("Name in lower : " + userFullName.ToLower());
             Console.WriteLine("Name in upper : " + userFullName.ToUpper());
 
-            string cleanPhoneNumber = "123-123-434343".Replace("-", "");
+            string cleanPhoneNumber = "123-123-434343".Replace("-", "/");
             Console.WriteLine("Phone number " + cleanPhoneNumber);
             Console.WriteLine();
 
@@ -94,10 +93,10 @@ namespace C_Sharp_Basic
             Console.WriteLine("My name is : " + formattedName);
             Console.WriteLine("names length is : " + formattedName.Length);
 
-            Console.WriteLine(
-                "firstName = " + formattedName.Substring(0, 9) +
-                "\nlastName = " + formattedName.Substring(9)
+            Console.WriteLine("firstName = " + formattedName.Substring(0, 9) +"\nlastName = " + formattedName.Substring(9)
             );
+
+
 
 
             // PROGRAM END
