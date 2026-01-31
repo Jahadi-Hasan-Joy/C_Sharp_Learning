@@ -1,106 +1,224 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
-namespace C_Sharp_Basic
+namespace Complete_CSharp_Guide
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            // PROGRAM START
-            Console.WriteLine("Alhamdulillah for everything.\n");
+            Console.WriteLine("=== C# COMPLETE GUIDE START ===\n");
 
-
-            // BASIC DATA TYPES
-            int userAge = 25;
-            bool isStudent = true;
-            char gradeLetter = 'A';
+            // ===============================
+            // 1. BASIC DATA TYPES
+            // ===============================
+            int age = 25;
             double cgpa = 3.80;
-            string shortName = "JOY";
+            bool isStudent = true;
+            char grade = 'A';
+            string name = "Jahadi Hasan Joy";
 
-            Console.WriteLine(
-                "My name is " + shortName +
-                ", I am " + userAge +
-                " years old. My CGPA is " + cgpa +
-                ", and my grade is " + gradeLetter
-            );
-            Console.WriteLine("It's " + isStudent + "\n");
+            Console.WriteLine($"Name: {name}");
+            Console.WriteLine($"Age: {age}");
+            Console.WriteLine($"CGPA: {cgpa}");
+            Console.WriteLine($"Student: {isStudent}");
+            Console.WriteLine($"Grade: {grade}\n");
 
+            // ===============================
+            // 2. USER INPUT
+            // ===============================
+            Console.Write("Enter your university name: ");
+            string university = Console.ReadLine();
+            Console.WriteLine($"University: {university}\n");
 
-            // STRING CONCATENATION
-            string firstName = "Md Jahadi";
-            string lastName = " Hasan Joy";
-            string fullName = firstName + lastName;
+            // ===============================
+            // 3. TYPE CASTING
+            // ===============================
+            double rawScore = 89.75;
+            int roundedScore = Convert.ToInt32(rawScore);
+            Console.WriteLine($"Raw Score: {rawScore}");
+            Console.WriteLine($"Rounded Score: {roundedScore}\n");
 
-            Console.WriteLine("My full name is " + fullName + "\n");
+            // ===============================
+            // 4. OPERATORS
+            // ===============================
+            int a = 10, b = 3;
+            Console.WriteLine($"Add: {a + b}");
+            Console.WriteLine($"Sub: {a - b}");
+            Console.WriteLine($"Mul: {a * b}");
+            Console.WriteLine($"Div: {a / b}");
+            Console.WriteLine($"Mod: {a % b}\n");
 
-
-            // CONSTANT VALUE
-            const double PI = 3.1416;
-            Console.WriteLine($"constant value is : {PI}");
-
-
-            // TYPE CASTING
-            double doubleNumber = 3.3434;
-            int convertedInt = Convert.ToInt32(doubleNumber);
-            Console.WriteLine("convert into int is : " + convertedInt);
-
-            int integerNumber = 10;
-            double convertedDouble = Convert.ToDouble(integerNumber) + 0.74;
-            Console.WriteLine("convert into double is : " + convertedDouble);
-
-
-            // DATA TYPE CHECK
-            Console.WriteLine(doubleNumber.GetType());
+            // ===============================
+            // 5. IF ELSE
+            // ===============================
+            if (cgpa >= 3.5)
+                Console.WriteLine("Result: Excellent");
+            else if (cgpa >= 3.0)
+                Console.WriteLine("Result: Good");
+            else
+                Console.WriteLine("Result: Needs Improvement");
             Console.WriteLine();
 
-
-            // MATH FUNCTIONS
-            Console.WriteLine("Math operation ");
-
-            double baseNumber = 9;
-            Console.WriteLine("power of m^2 is : " + Math.Pow(baseNumber, 2));
-            Console.WriteLine("Sqrt of m is : " + Math.Sqrt(baseNumber));
-            Console.WriteLine("Abs of m3 is : " + Math.Abs(-8));
-            Console.WriteLine("Round of m5 is : " + Math.Round(4.49));
-            Console.WriteLine("Ceiling of m5 is : " + Math.Ceiling(4.49));
-            Console.WriteLine("Floor of m5 is : " + Math.Floor(4.49));
-            Console.WriteLine("Max value is : " + Math.Max(10, 20));
-            Console.WriteLine("Min value is : " + Math.Min(10, 20));
+            // ===============================
+            // 6. SWITCH
+            // ===============================
+            int dayNumber = 5;
+            switch (dayNumber)
+            {
+                case 5:
+                    Console.WriteLine("Today is Friday");
+                    break;
+                default:
+                    Console.WriteLine("Regular Day");
+                    break;
+            }
             Console.WriteLine();
 
+            // ===============================
+            // 7. LOOPS
+            // ===============================
+            for (int i = 1; i <= 3; i++)
+                Console.WriteLine($"For Loop: {i}");
 
-            // RANDOM NUMBER
-            Random randomGenerator = new Random();
-
-            Console.WriteLine("Ludu dice value is " + randomGenerator.Next(1, 7));
-            Console.WriteLine("double Ludu dice value is " +
-                (randomGenerator.Next(1, 7) + randomGenerator.Next(1, 7)));
-            Console.WriteLine("Double random num is " + randomGenerator.NextDouble());
+            int counter = 1;
+            while (counter <= 3)
+            {
+                Console.WriteLine($"While Loop: {counter}");
+                counter++;
+            }
             Console.WriteLine();
 
+            // ===============================
+            // 8. ARRAY
+            // ===============================
+            int[] marks = { 85, 90, 88 };
+            Console.WriteLine($"First mark: {marks[0]}\n");
 
-            // STRING OPERATIONS 
-            string userFullName = "Jahadi Hasan Joy";
+            // ===============================
+            // 9. LIST
+            // ===============================
+            List<string> skills = new List<string>
+            {
+                "C++",
+                "C#",
+                "Problem Solving"
+            };
 
-            Console.WriteLine("Name in lower : " + userFullName.ToLower());
-            Console.WriteLine("Name in upper : " + userFullName.ToUpper());
-
-            string cleanPhoneNumber = "123-123-434343".Replace("-", "/");
-            Console.WriteLine("Phone number " + cleanPhoneNumber);
+            foreach (var skill in skills)
+                Console.WriteLine($"Skill: {skill}");
             Console.WriteLine();
 
-            string formattedName = userFullName.ToUpper().Insert(0, "MD ");
-            Console.WriteLine("My name is : " + formattedName);
-            Console.WriteLine("names length is : " + formattedName.Length);
+            // ===============================
+            // 10. DICTIONARY
+            // ===============================
+            Dictionary<string, int> subjectMarks = new Dictionary<string, int>
+            {
+                { "Math", 90 },
+                { "Physics", 85 }
+            };
+            Console.WriteLine($"Math Marks: {subjectMarks["Math"]}\n");
 
-            Console.WriteLine("firstName = " + formattedName.Substring(0, 9) +"\nlastName = " + formattedName.Substring(9)
-            );
+            // ===============================
+            // 11. METHOD
+            // ===============================
+            PrintGreeting(name);
+            Console.WriteLine();
 
+            // ===============================
+            // 12. ENUM
+            // ===============================
+            UserRole role = UserRole.Student;
+            Console.WriteLine($"User Role: {role}\n");
 
+            // ===============================
+            // 13. TERNARY OPERATOR
+            // ===============================
+            string passStatus = (cgpa >= 3.0) ? "Pass" : "Fail";
+            Console.WriteLine($"Status: {passStatus}\n");
 
+            // ===============================
+            // 14. DATETIME
+            // ===============================
+            DateTime currentTime = DateTime.Now;
+            Console.WriteLine($"Current Time: {currentTime}\n");
 
-            // PROGRAM END
+            // ===============================
+            // 15. TRY CATCH (CORRECT WAY)
+            // ===============================
+            int divisor = 0;
+            try
+            {
+                if (divisor == 0)
+                    throw new DivideByZeroException();
+
+                int result = 10 / divisor;
+            }
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("Error: Division by zero is not allowed");
+            }
+            Console.WriteLine();
+
+            // ===============================
+            // 16. CLASS & OBJECT (OOP)
+            // ===============================
+            Student student = new Student("Joy", 25, 3.80);
+            student.DisplayInfo();
+            Console.WriteLine();
+
+            // ===============================
+            // 17. LINQ (ADVANCED)
+            // ===============================
+            List<int> numbers = new List<int> { 5, 10, 15, 20 };
+            var filteredNumbers = numbers.Where(n => n > 10).ToList();
+
+            foreach (var num in filteredNumbers)
+                Console.WriteLine($"LINQ Result: {num}");
+            Console.WriteLine();
+
+            Console.WriteLine("=== C# COMPLETE GUIDE END ===");
             Console.ReadKey();
+        }
+
+        static void PrintGreeting(string userName)
+        {
+            Console.WriteLine($"Hello, {userName}");
+        }
+    }
+
+    // ===============================
+    // ENUM
+    // ===============================
+    enum UserRole
+    {
+        Student,
+        Admin,
+        Guest
+    }
+
+    // ===============================
+    // CLASS (OOP)
+    // ===============================
+    class Student
+    {
+        public string Name;
+        public int Age;
+        public double Cgpa;
+
+        public Student(string name, int age, double cgpa)
+        {
+            Name = name;
+            Age = age;
+            Cgpa = cgpa;
+        }
+
+        public void DisplayInfo()
+        {
+            Console.WriteLine($"Student Name: {Name}");
+            Console.WriteLine($"Age: {Age}");
+            Console.WriteLine($"CGPA: {Cgpa}");
         }
     }
 }
