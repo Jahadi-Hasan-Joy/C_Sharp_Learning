@@ -1,4 +1,5 @@
-﻿using System;
+﻿using C_Sharp_Basic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -13,6 +14,8 @@ namespace Complete_CSharp_Guide
             // ===============================
             // 1. BASIC DATA TYPES
             // ===============================
+
+            Messages.hello();
             int age = 25;
             double cgpa = 3.80;
             bool isStudent = true;
