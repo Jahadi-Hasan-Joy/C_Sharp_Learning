@@ -1,11 +1,11 @@
-﻿using System;
-namespace ConsoleAppTemplate
+﻿internal class Program
 {
-    internal class Program
+    private static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        int age = 25;
+        Console.WriteLine($"I am {age} years old.");
+
+        Console.WriteLine(int.MaxValue);
+        Console.WriteLine(int.MinValue);
     }
 }
