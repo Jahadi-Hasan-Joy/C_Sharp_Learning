@@ -7,14 +7,14 @@ namespace Complete_CSharp_Guide
     {
         private static void Main(string[] args)
         {
-            string name = "Md jahadi hasan joy";
-
-            for(int i = 0; i < name.Length; i++)
+            int[] num = new int[5] { 1, 2, 3, 4, 5 };
+            Array.Reverse(num);
+            foreach (int i in num)
             {
-                Console.Write(name[i]);
-                Thread.Sleep(100);
+                Console.Write($"{i} ");
             }
-                       
+
+            Console.ReadLine();
         }
     }
 }
