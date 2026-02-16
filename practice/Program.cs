@@ -7,15 +7,18 @@ namespace Complete_CSharp_Guide
     {
         private static void Main(string[] args)
         {
-            List<int> num = new List<int>() { 1,2,3,4,5};
-            num.Add(1);
-            num.Add(2);
-            num.Add(3);
-
-            foreach(int i in num)
+            Dictionary<int,string> info = new Dictionary<int, string>
             {
-                Console.WriteLine(i);
+                { 1, "Joy" },
+                { 2, "rini" }
+            };
+
+            foreach (var item in info)
+            {
+                Console.WriteLine(item);
             }
+
+
             Console.ReadLine();
         }
     }
