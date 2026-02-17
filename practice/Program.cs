@@ -9,8 +9,10 @@ namespace Complete_CSharp_Guide
         {
             Dictionary<int,string> info = new Dictionary<int, string>
             {
-                { 1, "Joy" },
-                { 2, "rini" }
+                { 3, "dada" },
+                { 1, "Joy"  },
+                { 2, "Rini" },
+                { 4, "Dada" }
             };
 
             foreach (var item in info)
