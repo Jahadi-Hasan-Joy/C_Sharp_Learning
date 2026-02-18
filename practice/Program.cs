@@ -15,13 +15,13 @@ namespace Complete_CSharp_Guide
                 { 4, "Dada" }
             };
 
-            foreach (var item in info)
+            for (int i = 0; i < info.Count; i++)
             {
-                Console.WriteLine(item);
+                var kvp = info.ElementAt(i);
+                Console.WriteLine($"{kvp.Key} = {kvp.Value}");
             }
 
 
-            Console.ReadLine();
         }
     }
 }
