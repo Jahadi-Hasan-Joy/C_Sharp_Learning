@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace Complete_CSharp_Guide
 {
     internal class Program
@@ -6,12 +7,15 @@ namespace Complete_CSharp_Guide
         private static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
+            string projectName = "ACME";
 
-            // To generate Japanese invoices:
-            // Nihon no seikyū-sho o seisei suru ni wa:
-            Console.Write("\n\n\u65e5\u672c\u306e\u8acb\u6c42\u66f8\u3092\u751f\u6210\u3059\u308b\u306b\u306f\uff1a\n\t");
-            Console.WriteLine(@"c:\invoices\app.exe -j");
-            Console.WriteLine();
+            string russianMessage = "\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u0440\u0443\u0441\u0441\u043a\u0438\u0439 \u0432\u044b\u0432\u043e\u0434";
+
+            Console.WriteLine($@"View English output:
+    c:\Exercise\{projectName}\data.txt");
+
+            Console.WriteLine($@"{russianMessage}:
+    c:\Exercise\{projectName}\ru-RU\data.txt");
         }
     }
 }
