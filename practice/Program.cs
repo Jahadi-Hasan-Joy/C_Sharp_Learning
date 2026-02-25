@@ -2,16 +2,22 @@
 
 namespace Complete_CSharp_Guide
 {
-    class Car
+    class Person
     {
-        public string model = "Mustang";
+        private string name;  // field
+        public string Name    // property
+        {
+            get { return name; }
+            set { name = value; }
+        }
     }
     internal class Program
     {
         private static void Main(string[] args)
         {
-            Car myObj = new Car();
-            Console.WriteLine(myObj.model);
+            Person myObj = new Person();
+            myObj.Name = "Liam";
+            Console.WriteLine(myObj.Name);
 
         }
     }
