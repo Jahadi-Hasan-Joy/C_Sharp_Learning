@@ -2,15 +2,18 @@
 
 namespace Complete_CSharp_Guide
 {
+    class Car
+    {
+        public string model = "Mustang";
+    }
     internal class Program
     {
         private static void Main(string[] args)
         {
-            string[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
-            foreach (string i in cars)
-            {
-                Console.WriteLine(i);
-            }
+            Car myObj = new Car();
+            Console.WriteLine(myObj.model);
+
         }
     }
+    
 }
