@@ -1,23 +1,14 @@
 ﻿using System;
-
 namespace Complete_CSharp_Guide
 {
-    class Person
-    {
-        private string name;  // field
-        public string Name    // property
-        {
-            get { return name; }
-            set { name = value; }
-        }
-    }
-    internal class Program
+   internal class Program
     {
         private static void Main(string[] args)
         {
-            Person myObj = new Person();
-            myObj.Name = "Liam";
-            Console.WriteLine(myObj.Name);
+            int[] arr;
+            arr = new int[5];
+            arr[0] = 10;
+            Console.WriteLine(arr[0]);
 
         }
     }
