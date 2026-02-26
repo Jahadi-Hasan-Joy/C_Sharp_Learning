@@ -10,8 +10,8 @@ namespace BasicConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Assalamu alaikum");
-            Console.ReadLine();
+            var a = 10.0 / 4;
+            Console.WriteLine(a);
         }
         
     }
