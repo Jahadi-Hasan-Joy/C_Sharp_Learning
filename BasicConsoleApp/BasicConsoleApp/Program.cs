@@ -11,10 +11,12 @@ namespace BasicConsoleApp
     {
         static void Main(string[] args)
         {
-            string snum = Console.ReadLine();
-            int.TryParse(snum, out int num);
-            Console.WriteLine(num);
+            // Verbatim string literal (@)
+            string filePath = "C:\\Users\\Username\\Documents\\file.txt";
+            string fileLocation = @"C:\Users\Username\Documents\\file.txt";
+            Console.WriteLine("First method "+ filePath);
+            Console.WriteLine("Second method " + fileLocation);
+
         }
-        
     }
 }
