@@ -11,11 +11,20 @@ namespace BasicConsoleApp
     {
         static void Main(string[] args)
         {
-            // string interpolation
-            
-            string name = "Joy";
-            Console.WriteLine("My name is "+name);
-            Console.WriteLine($"My name is {name}");
+            Dictionary<string, string> teachers = new Dictionary<string, string>()
+            {
+                { "CSE","Joy" },
+                { "EEE","Tanvir" },
+                { "Physics","Badhon" }
+            };
+            if (teachers.TryGetValue("CSE", out string teacher))
+            {
+                Console.WriteLine(teacher);
+            }
+            else
+            {
+                Console.WriteLine("Teacher not found");
+            }
         }
     }
 }
