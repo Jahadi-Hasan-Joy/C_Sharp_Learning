@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="HRAdminastrationAPI/HRAdminastrationAPI.csproj" />
+  <Project Path="SchoolHRAdministration/SchoolHRAdministration.csproj" />
+</Solution>
