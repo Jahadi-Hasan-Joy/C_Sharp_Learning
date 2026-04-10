@@ -32,7 +32,7 @@ namespace Complete_CSharp_Guide
             // 2. USER INPUT
             // ===============================
             Console.Write("Enter your university name: ");
-            string university = Console.ReadLine();
+            string? university = Console.ReadLine();
             Console.WriteLine($"University: {university}\n");
 
             // ===============================

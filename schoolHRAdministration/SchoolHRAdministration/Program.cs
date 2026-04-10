@@ -1,7 +1,4 @@
-﻿using HRAdminastrationAPI;
-using System;
-using System.Collections.Generic;
-namespace SchoolHRAdministration
+﻿namespace SchoolHRAdministration
 {
     class Program
     {
@@ -14,10 +11,20 @@ namespace SchoolHRAdministration
 
         }
     }
+
+    public interface IEmployee
+    {
+    }
+
     public class Teacher : EmployeeBase
     {
 
     }
+
+    public class EmployeeBase
+    {
+    }
+
     public class HeadOfDepartment : EmployeeBase
     {
         
